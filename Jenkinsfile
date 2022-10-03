@@ -5,9 +5,9 @@ pipeline {
         jdk 'jdk11'
     }
     stages {
-        stage('Build and Test'){
+        stage('Build and Test') {
             steps {
-                sh 'mvn verify'
+                bat 'mvn verify'
             }
         }
     }
